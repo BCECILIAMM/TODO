@@ -1,0 +1,178 @@
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f7ff;
+}
+header {
+    background-color: #00b2ca;
+    width: auto;
+    height: 60px;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 1; 
+    padding: 0;
+}
+div {
+    justify-content: center;
+}
+
+.inpToday {
+    width: 500px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(83, 83, 83, 0.3);
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.inpToday:focus {
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+.do{
+    margin: 20px
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto;
+}
+.col {
+    width: 48%;
+    margin-right: 20px;
+}
+
+
+.card-inicio {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    max-width: 400px; /* Ancho máximo */
+    margin: 20px auto; /* Márgenes automáticos para centrar */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+/* STYLE F */
+
+.checkbox.style-f {
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .checkbox.style-f input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkbox.style-f input:checked ~ .checkbox__checkmark {
+    background-color: #eee;
+  }
+  .checkbox.style-f input:checked ~ .checkbox__checkmark:after {
+    transform: scale(1);
+  }
+  .checkbox.style-f input:checked ~ .checkbox__body {
+    font-weight: bold;
+  }
+  .checkbox.style-f:hover input ~ .checkbox__checkmark {
+    background-color: #eee;
+  }
+  .checkbox.style-f:hover input:checked ~ .checkbox__checkmark {
+    background-color: #eee;
+  }
+  .checkbox.style-f .checkbox__checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    transition: background-color 0.25s ease;
+    border-radius: 11px;
+  }
+  .checkbox.style-f .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-color: #f7cb15;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.25s ease;
+  }
+  .checkbox.style-f .checkbox__body {
+    color: #333;
+    line-height: 1.4;
+    font-size: 16px;
+    transition: font-weight 0.25s ease;
+  }
+  
+button {
+    background-color: #00b2ca;
+    border-radius: 20px;
+    border: none;
+    width: 10%;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(83, 83, 83, 0.3);
+    padding: 5px 32px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: static;
+    margin-left: 20px;
+    flex: 1; /* El botón ocupará todo el espacio disponible */
+}
+
+button:hover {
+    background-color: #04a7bd; /* Cambia el color de fondo al pasar el mouse */
+  }
+
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Apila las columnas en pantallas pequeñas */
+    }
+    .col {
+      width: 100%;
+    }
+    .card-inicio {
+      max-width: 100%; /* Ocupa todo el ancho */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .button {
+      width: 100%;
+    }
+  }
+
+
+
+
+
